@@ -51,7 +51,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
             bindings = <
 &kp ESC    &kp F1  &kp F2  &kp F3   &kp F4  &kp SV_EURO      &kp SV_N7 &kp SV_N8 &kp SV_N9 &kp SV_N0    &kp C_MUTE &kp TAB
-&bt LCTRL  &bt F5  &bt F6  &bt F7   &bt F8  &kp SV_UMLAUT    &kp SV_N4 &kp SV_N5 &kp SV_N6 &kp C_BRI_UP &kp UP     &kp C_BRI_DN
+&kp LCTRL  &kp F5  &kp F6  &kp F7   &kp F8  &kp SV_UMLAUT    &kp SV_N4 &kp SV_N5 &kp SV_N6 &kp C_BRI_UP &kp UP     &kp C_BRI_DN
 &kp LSHFT  &kp F9  &kp F10 &kp F11  &kp F12 &kp SV_ACUTE     &kp SV_N1 &kp SV_N2 &kp SV_N3 &kp LEFT     &kp DOWN   &kp RIGHT
                            &kp LGUI &trans  &kp SV_SPACE     &kp RET   &trans    &kp RALT
             >;
