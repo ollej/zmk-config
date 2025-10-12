@@ -20,4 +20,6 @@
 ---
 include:
   - board: corneish_zen_v2_left
+    snippet: zmk-usb-logging
   - board: corneish_zen_v2_right
+    snippet: zmk-usb-logging
