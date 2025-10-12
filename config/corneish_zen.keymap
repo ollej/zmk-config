@@ -8,6 +8,12 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+
+/*
+* MacOS Swedish keypmap
+Generated with zmk-locale-generator: https://github.com/joelspadin/zmk-locale-generator
+From sv-t-k0-osx.xml: https://github.com/unicode-org/cldr/blob/9122a1a738f02cfd652c4cc1c865e1fd789a92a2/keyboards/osx/sv-t-k0-osx.xml
+*/
 #include "keys_sv_osx.h"
 
 / {
