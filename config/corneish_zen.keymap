@@ -55,13 +55,13 @@
             display-name = "SYMBOL";
 // -----------------------------------------------------------------------------------------
 // |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |  å  |  ä  |  ö  |  €  |     |   |  -  |  =  |  [  |  ]  | "|" |  `   |
+// | CTRL |  å  |  ä  |  ö  |  €  | ZSU |   |  -  |  =  |  [  |  ]  | "|" |  `   |
 // | SHFT |  ¨  |  ´  |  ?  |  <  |  >  |   |  _  |  +  |  {  |  }  |  \  |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
             bindings = <
-&kp  ESC  &kp SV_EXCL   &kp SV_AT       &kp SV_HASH     &kp SV_DLLR &kp SV_PRCNT   &kp SV_CARET &kp SV_AMPS  &kp SV_ASTRK &kp SV_LPAR &kp SV_RPAR &kp BSPC
-&kp LCTRL &kp SV_A_RING &kp SV_A_UMLAUT &kp SV_O_UMLAUT &kp SV_EURO &trans         &kp SV_MINUS &kp SV_EQUAL &kp SV_LBKT  &kp SV_RBKT &kp SV_PIPE &kp GRAVE
-&kp LSHFT &kp SV_UMLAUT &kp SV_ACUTE    &kp SV_QUESTION &kp SV_LT   &kp SV_GT      &kp SV_UNDER &kp SV_PLUS  &kp SV_LBRC  &kp SV_RBRC &kp SV_BSLH &kp TILDE
+&kp  ESC  &kp SV_EXCL   &kp SV_AT       &kp SV_HASH     &kp SV_DLLR &kp SV_PRCNT    &kp SV_CARET &kp SV_AMPS  &kp SV_ASTRK &kp SV_LPAR &kp SV_RPAR &kp BSPC
+&kp LCTRL &kp SV_A_RING &kp SV_A_UMLAUT &kp SV_O_UMLAUT &kp SV_EURO &studio_unlock  &kp SV_MINUS &kp SV_EQUAL &kp SV_LBKT  &kp SV_RBKT &kp SV_PIPE &kp GRAVE
+&kp LSHFT &kp SV_UMLAUT &kp SV_ACUTE    &kp SV_QUESTION &kp SV_LT   &kp SV_GT       &kp SV_UNDER &kp SV_PLUS  &kp SV_LBRC  &kp SV_RBRC &kp SV_BSLH &kp TILDE
                           &kp LGUI &trans   &kp SV_SPACE &kp RET   &trans    &kp RALT
             >;
         };
