@@ -4,16 +4,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: zmklocales
-      url-base: https://github.com/joelspadin/zmk-locales
+    - name: zmklocales_base
+      url-base: https://github.com/joelspadin
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: zmklocales
-      remote: zmklocales
+    - name: zmk-locales
+      remote: zmklocales_base
       revision: main
   self:
     path: config
