@@ -30,14 +30,14 @@
         default_layer {
             display-name = "QWERTY";
 // --------------------------------------------------------------------------------
-// |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | TAB  |
+// |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  Å   |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ö  |  Ä   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | BSPC |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
             bindings = <
-&kp ESC   &kp SV_Q &kp SV_W &kp SV_E &kp SV_R &kp SV_T   &kp SV_Y &kp SV_U  &kp SV_I     &kp SV_O   &kp SV_P     &kp BSPC
-&kp LCTRL &kp SV_A &kp SV_S &kp SV_D &kp SV_F &kp SV_G   &kp SV_H &kp SV_J  &kp SV_K     &kp SV_L   &kp SV_SEMI  &kp SV_SQT
-&kp LSHFT &kp SV_Z &kp SV_X &kp SV_C &kp SV_V &kp SV_B   &kp SV_N &kp SV_M  &kp SV_COMMA &kp SV_DOT &kp SV_SLASH &kp TAB
+&kp ESC   &kp SV_Q &kp SV_W &kp SV_E &kp SV_R &kp SV_T   &kp SV_Y &kp SV_U  &kp SV_I     &kp SV_O   &kp SV_P        &kp SV_A_RING 
+&kp LCTRL &kp SV_A &kp SV_S &kp SV_D &kp SV_F &kp SV_G   &kp SV_H &kp SV_J  &kp SV_K     &kp SV_L   &kp SV_O_UMLAUT &kp SV_A_UMLAUT
+&kp LSHFT &kp SV_Z &kp SV_X &kp SV_C &kp SV_V &kp SV_B   &kp SV_N &kp SV_M  &kp SV_COMMA &kp SV_DOT &kp SV_SLASH    &kp BSPC
                &kp LGUI &mo 1 &kp SV_SPACE   &kp RET &mo 2 &kp RALT
             >;
         };
@@ -45,12 +45,12 @@
         lower_layer {
             display-name = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
+// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |  TAB |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |  F12 |
 // | SHFT | F1  | F2  | F3  | F4  | F5  |   | F6  | F7  |  F8 | F9  | F10 |  F11 |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
             bindings = <
-&kp ESC    &kp SV_N1    &kp SV_N2    &kp SV_N3    &kp SV_N4    &kp SV_N5      &kp SV_N6 &kp SV_N7 &kp SV_N8 &kp SV_N9 &kp SV_N0 &kp BSPC
+&kp ESC    &kp SV_N1    &kp SV_N2    &kp SV_N3    &kp SV_N4    &kp SV_N5      &kp SV_N6 &kp SV_N7 &kp SV_N8 &kp SV_N9 &kp SV_N0 &kp TAB
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &kp F12
 &kp LSHFT  &kp F1       &kp F2       &kp F3       &kp F4       &kp F5         &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &kp F11
                                      &kp LGUI     &trans       &kp SV_SPACE   &kp RET   &trans    &kp RALT
@@ -60,14 +60,14 @@
         raise_layer {
             display-name = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |  å  |  ä  |  ö  |  €  | ZSU |   |  -  |  =  |  [  |  ]  | "|" |  `   |
-// | SHFT |  ¨  |  ´  |  ?  |  <  |  >  |   |  _  |  +  |  {  |  }  |  \  |  ~   |
+// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  `   |
+// | CTRL |  å  |  ä  |  ö  |  €  |  "  |   |  -  |  =  |  [  |  ]  | "|" |  ~   |
+// | SHFT |  ¨  |  ´  |  ?  |  <  |  >  |   |  _  |  +  |  {  |  }  |  \  | BSPC |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
             bindings = <
-&kp  ESC  &kp SV_EXCL   &kp SV_AT       &kp SV_HASH     &kp SV_DLLR &kp SV_PRCNT    &kp SV_CARET &kp SV_AMPS  &kp SV_ASTRK &kp SV_LPAR &kp SV_RPAR &kp BSPC
-&kp LCTRL &kp SV_A_RING &kp SV_A_UMLAUT &kp SV_O_UMLAUT &kp SV_EURO &studio_unlock  &kp SV_MINUS &kp SV_EQUAL &kp SV_LBKT  &kp SV_RBKT &kp SV_PIPE &kp SV_GRAVE
-&kp LSHFT &kp SV_UMLAUT &kp SV_ACUTE    &kp SV_QUESTION &kp SV_LT   &kp SV_GT       &kp SV_UNDER &kp SV_PLUS  &kp SV_LBRC  &kp SV_RBRC &kp SV_BSLH &kp SV_TILDE
+&kp  ESC  &kp SV_EXCL   &kp SV_AT       &kp SV_HASH     &kp SV_DLLR &kp SV_PRCNT    &kp SV_CARET &kp SV_AMPS  &kp SV_ASTRK &kp SV_LPAR &kp SV_RPAR &kp SV_GRAVE
+&kp LCTRL &kp SV_A_RING &kp SV_A_UMLAUT &kp SV_O_UMLAUT &kp SV_EURO &kp SV_DQT      &kp SV_MINUS &kp SV_EQUAL &kp SV_LBKT  &kp SV_RBKT &kp SV_PIPE &kp SV_TILDE
+&kp LSHFT &kp SV_UMLAUT &kp SV_ACUTE    &kp SV_QUESTION &kp SV_LT   &kp SV_GT       &kp SV_UNDER &kp SV_PLUS  &kp SV_LBRC  &kp SV_RBRC &kp SV_BSLH &kp BSPC
                           &kp LGUI &trans   &kp SV_SPACE &kp RET   &trans    &kp RALT
             >;
         };
