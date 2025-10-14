@@ -15,6 +15,7 @@
 * MacOS Swedish keymap
 * Generated with zmk-locale-generator: https://github.com/joelspadin/zmk-locale-generator
 * From sv-t-k0-osx-extended.xml: https://github.com/unicode-org/cldr/blob/9122a1a738f02cfd652c4cc1c865e1fd789a92a2/keyboards/osx/sv-t-k0-osx-extended.xml
+* Use with module zmk-locales
 */
 #include "keys_sv_osx.h"
 
