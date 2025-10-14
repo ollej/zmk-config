@@ -16,6 +16,13 @@
 */
 #include "keys_sv_osx.h"
 
+// Layers
+#define QWERTY  0
+#define NUMBER  1
+#define SYMBOL  2
+#define CONTROL 3
+#define NAVIGATION 4
+
 / {
     chosen {
         zmk,physical-layout = &foostan_corne_6col_layout;
@@ -30,46 +37,65 @@
         default_layer {
             display-name = "QWERTY";
 // --------------------------------------------------------------------------------
-// |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  Å   |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ö  |  Ä   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | BSPC |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// |  ESC |  Q  |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |  Å  |
+// | CTRL |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  Ö  |  Ä  |
+// | SHFT |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  -  | RET |
+//                    | GUI | LWR | BSPC |   | SPC | RSE  | ALT |
             bindings = <
-&kp ESC   &kp SV_Q &kp SV_W &kp SV_E &kp SV_R &kp SV_T   &kp SV_Y &kp SV_U  &kp SV_I     &kp SV_O   &kp SV_P        &kp SV_A_RING 
-&kp LCTRL &kp SV_A &kp SV_S &kp SV_D &kp SV_F &kp SV_G   &kp SV_H &kp SV_J  &kp SV_K     &kp SV_L   &kp SV_O_UMLAUT &kp SV_A_UMLAUT
-&kp LSHFT &kp SV_Z &kp SV_X &kp SV_C &kp SV_V &kp SV_B   &kp SV_N &kp SV_M  &kp SV_COMMA &kp SV_DOT &kp SV_SLASH    &kp BSPC
-               &kp LGUI &mo 1 &kp SV_SPACE   &kp RET &mo 2 &kp RALT
+&kp ESC   &kp SV_Q &kp SV_W &kp SV_E &kp SV_R   &kp SV_T     &kp SV_Y      &kp SV_U   &kp SV_I     &kp SV_O   &kp SV_P        &kp SV_A_RING
+&kp LCTRL &kp SV_A &kp SV_S &kp SV_D &kp SV_F   &kp SV_G     &kp SV_H      &kp SV_J   &kp SV_K     &kp SV_L   &kp SV_O_UMLAUT &kp SV_A_UMLAUT
+&kp LSHFT &kp SV_Z &kp SV_X &kp SV_C &kp SV_V   &kp SV_B     &kp SV_N      &kp SV_M   &kp SV_COMMA &kp SV_DOT &kp SV_MINUS    &kp RET
+                            &kp LGUI &mo NUMBER &kp BSPC     &kp SV_SPACE  &mo SYMBOL &kp RALT
             >;
         };
 
         lower_layer {
             display-name = "NUMBER";
-// -----------------------------------------------------------------------------------------
-// |  ESC | F1  | F2  | F3  | F4  |  €  |   |  7  |  8  |  9  |  0  | MUTE | TAB |
-// | CTRL | F5  | F6  | F7  | F8  |  ¨  |   |  4  |  5  |  6  | BR+ |  UP  | BR- |
-// | SHFT | F9  | F10 | F11 | F12 |  ´  |   |  1  |  2  |  3  | LFT | DWN  | RGT |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// -------------------------------------------------------------------------------
+// |  ESC | F1  | F2  | F3  | F4  |  €   |   | TAB |  7  |  8  |  9  |  /  |  *  |
+// | CTRL | F5  | F6  | F7  | F8  |  ¨   |   |  ,  |  4  |  5  |  6  |  -  |  +  |
+// | SHFT | F9  | F10 | F11 | F12 |  ´   |   |  0  |  1  |  2  |  3  |  .  |  =  |
+//                    | GUI |     | BSPC |   | SPC |     | ALT |
             bindings = <
-&kp ESC    &kp F1  &kp F2  &kp F3   &kp F4  &kp SV_EURO      &kp SV_N7 &kp SV_N8 &kp SV_N9 &kp SV_N0    &kp C_MUTE &kp TAB
-&kp LCTRL  &kp F5  &kp F6  &kp F7   &kp F8  &kp SV_UMLAUT    &kp SV_N4 &kp SV_N5 &kp SV_N6 &kp C_BRI_UP &kp UP     &kp C_BRI_DN
-&kp LSHFT  &kp F9  &kp F10 &kp F11  &kp F12 &kp SV_ACUTE     &kp SV_N1 &kp SV_N2 &kp SV_N3 &kp LEFT     &kp DOWN   &kp RIGHT
-                           &kp LGUI &trans  &kp SV_SPACE     &kp RET   &trans    &kp RALT
+&kp ESC    &kp F1  &kp F2  &kp F3   &kp F4  &kp SV_EURO      &kp TAB      &kp SV_N7    &kp SV_N8 &kp SV_N9 &kp SV_SLASH &kp SV_ASTRK
+&kp LCTRL  &kp F5  &kp F6  &kp F7   &kp F8  &kp SV_UMLAUT    &kp SV_COMMA &kp SV_N4    &kp SV_N5 &kp SV_N6 &kp SV_MINUS &kp SV_PLUS
+&kp LSHFT  &kp F9  &kp F10 &kp F11  &kp F12 &kp SV_ACUTE     &kp SV_N0    &kp SV_N1    &kp SV_N2 &kp SV_N3 &kp SV_DOT   &kp SV_EQUAL
+                           &kp LGUI &trans  &kp BSPC         &kp SV_SPACE &trans       &kp RALT
             >;
         };
 
         raise_layer {
             display-name = "SYMBOL";
-// -----------------------------------------------------------------------------------------
-// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  `   |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  -  |  =  |  [  |  ]  | "|" |  ~   |
-// | SHFT |  §  |  "  |  ?  |  <  |  >  |   |  _  |  +  |  {  |  }  |  \  | BSPC |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// -------------------------------------------------------------------------------
+// |  ESC |  !  |  @  |  #  |  $  |  %   |   |  ^  |  &  |  *  |  (  |  )  |  `  |
+// | CTRL |     |     |     |     |      |   |  "  |  =  |  [  |  ]  | "|" |  ~  |
+// | SHFT |  §  |  '  |  ?  |  <  |  >   |   |  /  |  +  |  {  |  }  |  \  | RET |
+//                    | GUI |     | BSPC |   | SPC |     | ALT |
             bindings = <
-&kp  ESC   &kp SV_EXCL  &kp SV_AT    &kp SV_HASH     &kp SV_DLLR  &kp SV_PRCNT    &kp SV_CARET &kp SV_AMPS  &kp SV_ASTRK &kp SV_LPAR &kp SV_RPAR &kp SV_GRAVE
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3 &bt BT_SEL 4    &kp SV_MINUS &kp SV_EQUAL &kp SV_LBKT  &kp SV_RBKT &kp SV_PIPE &kp SV_TILDE
-&kp LSHFT  &kp SV_SECT  &kp SV_DQT   &kp SV_QUESTION &kp SV_LT    &kp SV_GT       &kp SV_UNDER &kp SV_PLUS  &kp SV_LBRC  &kp SV_RBRC &kp SV_BSLH &kp BSPC
-                        &kp LGUI &trans   &kp SV_SPACE &kp RET   &trans    &kp RALT
+&kp  ESC   &kp SV_EXCL &kp SV_AT    &kp SV_HASH     &kp SV_DLLR    &kp SV_PRCNT    &kp SV_CARET &kp SV_AMPS  &kp SV_ASTRK &kp SV_LPAR &kp SV_RPAR &kp SV_GRAVE
+&kp LCTRL  &trans      &trans       &trans          &trans         &trans          &kp SV_DQT   &kp SV_EQUAL &kp SV_LBKT  &kp SV_RBKT &kp SV_PIPE &kp SV_TILDE
+&kp LSHFT  &kp SV_SECT &kp SV_APOS  &kp SV_QUESTION &kp SV_LT      &kp SV_GT       &kp SV_SLASH &kp SV_PLUS  &kp SV_LBRC  &kp SV_RBRC &kp SV_BSLH &kp RET
+                        &kp LGUI    &trans          &kp BSPC       &kp SV_SPACE    &trans       &kp RALT
             >;
         };
+
+/*
+        lower_layer {
+            display-name = "CONTROL";
+// ----------------------------------------------------------------------------------------
+// |  ESC | boot | reset | studio | off  | usb   |   | VOL+ | F1  | F2  | F3  | F4  | TAB |
+// | BTCLR| BT1  | BT2   | BT3    | BT4  | BT5   |   | VOL- | F5  | F6  | F7  | F8  | BR+ |
+// | SHFT | PREV | PLAY  | STOP   | NEXT | PSCRN |   | MUT  | F9  | F10 | F11 | F12 | BR- |
+//                       | GUI    |      | BSPC  |   | ENT  |     | ALT |
+            bindings = <
+&kp ESC    &bootloader  &sys_reset   &studio_unlock &soft_off    &out OUT_TOG       &kp C_VOL_UP &kp F1  &kp F2  &kp F3   &kp F4   &kp TAB
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2   &bt BT_SEL 3 &bt BT_SEL 4       &kp C_VOL_DN &kp F5  &kp F6  &kp F7   &kp F8   &kp C_BRI_UP
+&kp LSHFT  &kp C_PREV   &kp C_PP     &kp C_STOP     &kp C_NEXT   &kp PRINTSCREEN    &kp C_MUTE   &kp F9  &kp F10 &kp F11  &kp F12  &kp C_BRI_DN
+                                     &kp LGUI       &trans       &kp BSPC           &kp SV_SPACE &trans  &kp RALT
+            >;
+        };
+*/
+
+
     };
 };
