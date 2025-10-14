@@ -92,7 +92,7 @@
 &kp ESC   &trans &trans &trans   &trans     &trans       &kp TAB      &kp SV_N7 &kp SV_N8 &kp SV_N9 &kp SV_SLASH &kp SV_ASTRK
 &kp LCTRL &trans &trans &trans   &trans     &trans       &kp SV_COMMA &kp SV_N4 &kp SV_N5 &kp SV_N6 &kp SV_MINUS &kp SV_PLUS
 &td_shift &trans &trans &trans   &trans     &trans       &kp SV_N0    &kp SV_N1 &kp SV_N2 &kp SV_N3 &kp SV_DOT   &kp SV_EQUAL
-                        &kp LGUI &mo QWERTY &backdel     &kp SV_SPACE &mo QWERTY &kp RALT
+                        &kp LGUI &to QWERTY &backdel     &kp SV_SPACE &to QWERTY &kp RALT
             >;
         };
 
@@ -107,7 +107,7 @@
 &kp  ESC  &kp SV_EXCL   &kp SV_AT    &kp SV_HASH     &kp SV_DLLR    &kp SV_PRCNT &kp SV_CARET &kp SV_AMPS  &kp SV_ASTRK &kp SV_LPAR &kp SV_RPAR &kp SV_GRAVE
 &kp LCTRL &kp SV_UMLAUT &kp SV_ACUTE &none           &kp SV_EURO    &none        &kp SV_DQT   &kp SV_EQUAL &kp SV_LBKT  &kp SV_RBKT &kp SV_PIPE &kp SV_TILDE
 &td_shift &kp SV_SECT   &kp SV_APOS  &kp SV_QUESTION &kp SV_LT      &kp SV_GT    &kp SV_SLASH &kp SV_PLUS  &kp SV_LBRC  &kp SV_RBRC &kp SV_BSLH &kp RET
-                        &kp LGUI     &mo QWERTY      &backdel       &kp SV_SPACE &mo QWERTY   &kp RALT
+                        &kp LGUI     &to QWERTY      &backdel       &kp SV_SPACE &to QWERTY   &kp RALT
             >;
         };
 
@@ -122,7 +122,7 @@
 &kp ESC    &bootloader  &sys_reset   &studio_unlock &soft_off    &out OUT_TOG       &kp C_VOL_UP &kp F1     &kp F2  &kp F3   &kp F4   &kp C_BRI_UP
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2   &bt BT_SEL 3 &bt BT_SEL 4       &kp C_VOL_DN &kp F5     &kp F6  &kp F7   &kp F8   &kp C_BRI_DN
 &td_shift  &kp C_PREV   &kp C_PP     &kp C_STOP     &kp C_NEXT   &kp PRINTSCREEN    &kp C_MUTE   &kp F9     &kp F10 &kp F11  &kp F12  &kp RET
-                                     &kp LGUI       &mo QWERTY   &backdel           &kp SV_SPACE &mo QWERTY &kp RALT
+                                     &kp LGUI       &to QWERTY   &backdel           &kp SV_SPACE &to QWERTY &kp RALT
             >;
         };
 
@@ -137,7 +137,7 @@
 &kp ESC   &mkp MB1       &mkp MB2       &mkp MB3     &mkp MB4        &mkp MB5      &kp HOME     &kp PG_DN  &kp PG_UP &kp END   &none &kp TAB
 &kp LCTRL &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &none         &kp LEFT     &kp DOWN   &kp UP    &kp RIGHT &none &kp INS
 &td_shift &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none         &none        &none      &none     &none     &none &kp RET
-                                        &kp LGUI     &mo QWERTY      &backdel      &kp SV_SPACE &mo QWERTY &kp RALT
+                                        &kp LGUI     &to QWERTY      &backdel      &kp SV_SPACE &to QWERTY &kp RALT
             >;
         };
 
