@@ -87,6 +87,6 @@ file was downloaded from [Unicode CLDR Project](https://github.com/unicode-org/c
 ## Keymap Drawer
 
 The keymap image is generated with
-(keymap drawer)[https://keymap-drawer.streamlit.app/],
+[keymap drawer](https://keymap-drawer.streamlit.app/),
 a visualizer for keyboard keymaps using the config
 [config/keymap-drawer.yaml](config/keymap-drawer.yaml)
