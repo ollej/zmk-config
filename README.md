@@ -3,7 +3,7 @@
 A five layer keymap for the Corne-ish Zen keyboard to use on MacOS with
 a Swedish layout.
 
-![My Corne-ish Zen Swedish MacOS keymap](corne-ish-zen.png)
+![My Corne-ish Zen Swedish MacOS keymap](corne-ish-zen.svg)
 
 ## Five layers
 
@@ -83,3 +83,10 @@ zmk_locale_generator single SV config/sv-t-k0-osx-extended.xml --out config/keys
 
 The [keyboard definition](https://github.com/unicode-org/cldr/blob/9122a1a738f02cfd652c4cc1c865e1fd789a92a2/keyboards/osx/sv-t-k0-osx-extended.xml)
 file was downloaded from [Unicode CLDR Project](https://github.com/unicode-org/cldr).
+
+## Keymap Drawer
+
+The keymap image is generated with
+(keymap drawer)[https://keymap-drawer.streamlit.app/],
+a visualizer for keyboard keymaps using the config
+[config/keymap-drawer.yaml](config/keymap-drawer.yaml)

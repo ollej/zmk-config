@@ -1,0 +1,102 @@
+layout: {zmk_keyboard: corneish_zen, layout_name: foostan_corne_6col_layout}
+layers:
+  QWERTY:
+  - [ESC, Q, W, E, R, T, Y, U, I, O, P, Å]
+  - [LCTRL, A, S, D, F, G, H, J, K, L, Ö, Ä]
+  - [SHIFT, Z, X, C, V, B, N, M, ',', '.', '-', RET]
+  - - LGUI
+    - NUM CON
+    - {t: BSPC, s: DEL}
+    - SPACE
+    - SYM NAV
+    - RALT
+  NUMBER:
+  - - ESC
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - TAB
+    - 7
+    - 8
+    - 9
+    - '/'
+    - '*'
+  - - LCTRL
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ','
+    - 4
+    - 5
+    - 6
+    - '-'
+    - '+'
+  - - {t: SHIFT, s: CAPSWORD}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - 0
+    - 1
+    - 2
+    - 3
+    - "."
+    - '='
+  - - LGUI
+    - QWERTY
+    - {t: BSPC, s: DEL}
+    - SPACE
+    - QWERTY
+    - RALT
+  SYMBOL:
+  - [ESC, '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '`']
+  - [LCTRL, '¨', '´', '', '€', '', '"', '=', '[', ']', '|', '~']
+  - [{t: SHIFT, s: CAPSWORD}, '§', "'", '?', '<', '>', '/', '+', '{',
+'}', '\', RET]
+  - - LGUI
+    - QWERTY
+    - {t: BSPC, s: DEL}
+    - SPACE
+    - QWERTY
+    - RALT
+  CONTROL:
+  - [ESC, 'boot loader', 'sys reset', 'studio unlock', 'soft off',
+USB, VOL UP, F1, F2, F3, F4, BRI UP]
+  - - BT CLR
+    - BT 0
+    - BT 1
+    - BT 2
+    - BT 3
+    - BT 4
+    - VOL DN
+    - F5
+    - F6
+    - F7
+    - F8
+    - BRI DN
+  - [{t: SHIFT, s: CAPSWORD}, PREV, PP, STOP, NEXT, 'PRINT SCREEN',
+MUTE, F9, F10, F11, F12, RET]
+  - - LGUI
+    - QWERTY
+    - {t: BSPC, s: DEL}
+    - SPACE
+    - QWERTY
+    - RALT
+  NAVIGATION:
+  - [ESC, '&mkp MB1', '&mkp MB2', '&mkp MB3', '&mkp MB4', '&mkp MB5',
+HOME, PG DN, PG UP, END, '', TAB]
+  - [LCTRL, 'mouse LEFT', 'mouse DOWN', 'mouse UP', 'mouse RIGHT', '',
+LEFT, DOWN, UP, RIGHT, '', INS]
+  - [{t: SHIFT, s: CAPSWORD}, 'scroll LEFT', 'scroll DOWN', 'scroll
+UP', 'scroll RIGHT', '', '', '', '', '', '', RET]
+  - - LGUI
+    - QWERTY
+    - {t: BSPC, s: DEL}
+    - SPACE
+    - QWERTY
+    - RALT
